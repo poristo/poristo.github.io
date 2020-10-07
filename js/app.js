@@ -58,14 +58,14 @@
     function disableBodyScroll() {
         var vScrollWidth = window.innerWidth - $(document).width();        
         function noBodyScroll() {
-            $('body').css({
+            $('html').css({
                 'padding-right' : vScrollWidth+'px',
                 'overflow-y' : 'hidden'
             })
         }
         function doBodyScroll() {
             setTimeout(function(){
-            $('body').css({
+            $('html').css({
                 'padding-right' : 0,
                 'overflow-y' : 'auto'
             }) },200)
